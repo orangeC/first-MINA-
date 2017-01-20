@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/request/request"
   ],
   "tabBar": {
     "list": [{
@@ -20,6 +21,11 @@
       "text": "测试",
       "iconPath":"images/icon_seo.png",
       "selectedIconPath":"images/icon_seo_HL.png"
+    },{
+      "pagePath": "pages/request/request",
+      "text": "请求测试",
+      "iconPath":"images/icon_speed.png",
+      "selectedIconPath":"images/icon_speed_HL.png"
     }]
   },
   "window":{
