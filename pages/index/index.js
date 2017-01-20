@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
+var common = require("../../utils/common.js")
 Page({
   data: {
     motto: 'Hello World',
@@ -26,5 +27,9 @@ Page({
   onShow: function(){
     app.globalData.userInfo = "i am in index.js";
     console.log(app.globalData.userInfo)
+  },
+  onHide: function(){
+    common.sayHello("看这");
+    common.sayGoodbye("再见")
   }
 })
