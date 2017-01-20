@@ -8,7 +8,7 @@
     </view>
 </block>
     <view wx:else>啊</view>
-    <button bindtap="tapName">开关</button>
+    <button bindtap="tapName" data-userid="myUserId" data-user-class="myUserClass">开关</button>
 
 
 <view wx:for="{{arr}}" wx:for-item="fitem" wx:key="i" wx:for-index="i">

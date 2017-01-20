@@ -24,7 +24,10 @@ Page({
     }
   },
   //事件处理函数
-  tapName:function(){
+  tapName:function(event){
+    console.log(event)
+    console.log("data-userid-" +event.target.dataset.userid)
+    console.log("data-userclass-" +event.target.dataset.userClass)//获取大写自定义属性
     this.setData({
       switch:! this.data.switch
     })
