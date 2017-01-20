@@ -9,4 +9,9 @@
 </block>
     <view wx:else>啊</view>
     <button bindtap="tapName">开关</button>
+
+
+<view wx:for="{{arr}}" wx:for-item="item" wx:key="i" wx:for-index="i">
+    <view class="myArray-{{i}}" >{{i}}-{{item.message}}</view>
+</view>
 </view>
