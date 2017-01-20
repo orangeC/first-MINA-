@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/test/test"
   ],
   "tabBar": {
     "list": [{
@@ -14,6 +15,11 @@
       "text": "日志",
       "iconPath":"images/icon_speed.png",
       "selectedIconPath":"images/icon_speed_HL.png"
+    }, {
+      "pagePath": "pages/test/test",
+      "text": "测试",
+      "iconPath":"images/icon_seo.png",
+      "selectedIconPath":"images/icon_seo_HL.png"
     }]
   },
   "window":{
