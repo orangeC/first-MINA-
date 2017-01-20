@@ -1,5 +1,7 @@
 <!--index.wxml-->
+<import src="../components/temp.wxml" />
 <view class="container">
+<include src="../components/header.wxml" />
 <block wx:if="{{switch}}">
     <view class="usermotto" >
         <text class="user-{{userid}}">{{motto}}</text>
@@ -23,4 +25,6 @@
     <text> Time: {{time}} </text>
   </view>
 </template>
+<template is="item" data="{{text : '组件组件temp中传过来的内容'}}"></template>
+<include src="../components/footer.wxml" />
 </view>
