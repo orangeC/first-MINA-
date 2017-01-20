@@ -11,7 +11,17 @@ Page({
       {message:"程"},
       {message:"序"}
       
-    ]
+    ],
+    item: {
+      index: 0,
+      msg: 'this is a template',
+      time: '2016-09-15'
+    },
+    itemb: {
+      index: 1,
+      msg: 'this is a template',
+      time: '2017-1-21'
+    }
   },
   //事件处理函数
   tapName:function(){

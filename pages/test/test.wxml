@@ -11,7 +11,16 @@
     <button bindtap="tapName">开关</button>
 
 
-<view wx:for="{{arr}}" wx:for-item="item" wx:key="i" wx:for-index="i">
-    <view class="myArray-{{i}}" >{{i}}-{{item.message}}</view>
+<view wx:for="{{arr}}" wx:for-item="fitem" wx:key="i" wx:for-index="i">
+    <view class="myArray-{{i}}" >{{i}}-{{fitem.message}}</view>
 </view>
+
+<template is="msgItem" data="{{...item}}"/>
+<template is="msgItem" data="{{...itemb}}"/>
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
 </view>
