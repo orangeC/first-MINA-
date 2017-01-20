@@ -22,5 +22,9 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  onShow: function(){
+    app.globalData.userInfo = "i am in index.js";
+    console.log(app.globalData.userInfo)
   }
 })
