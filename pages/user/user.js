@@ -33,12 +33,18 @@ Page({
         wx.hideToast();
         if (res.data.LoginStatus == 1) {
           //进行一些用户状态的存储
+          wx.switchTab({
+            url: '../index/index',
+            success:function(){
+              console.log("跳转成功")
+            }
+          })
           console.log("成功")
         } else {
           wx.showModal({
             title: '登陆失败',
             content: '请检查您填写的用户信息',
-            showCancel:false,
+            showCancel: false,
             success: function (res) {
               //回调函数
               console.log("完了没进去")
