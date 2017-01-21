@@ -33,6 +33,7 @@ Page({
         wx.hideToast();
         if (res.data.LoginStatus == 1) {
           //进行一些用户状态的存储
+          //进行tab切换
           wx.switchTab({
             url: '../index/index',
             success:function(){
